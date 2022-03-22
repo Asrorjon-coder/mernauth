@@ -34,6 +34,8 @@ app.post('/api/register', async (req, res) => {
 	}
 })
 
+//app.get('/api/activate')
+
 app.post('/api/login', async (req, res) => {
 	const user = await User.findOne({
 		email: req.body.email,

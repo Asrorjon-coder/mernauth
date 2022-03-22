@@ -26,7 +26,7 @@ function App() {
 		const data = await response.json()
 
 		if (data.status === 'ok') {
-			history.push('/login')
+			history.push(`/activate/${email}`)
 		}
 	}
 
